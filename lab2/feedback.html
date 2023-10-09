@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="form-value">
+                <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+                    <h2 class="form-header">Форма обратной связи</h2>
+                    <div class="input-box">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="text" id="fio" name="fio" placeholder="ФИО">
+                    </div>
+                    <div class="input-box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </div>
+                    <fieldset class="category">
+                        <legend>Категория обращения</legend>
+                        <select name="type" id="type">
+                            <option value="negative">Жалоба</option>
+                            <option value="positive">Благодарность</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="foundout">
+                        <legend>Как вы узнали о нас?</legend>
+                        <div class="form-group">
+                            <input type="radio" name="source" id="adv" value="adv">
+                            <label for="adv">Реклама</label>
+                        </div>
+                        <div class="form-group">          
+                            <input type="radio" name="source" id="friends" value="friends">
+                            <label for="friends">Друзья</label>
+                        </div>
+                        <div class="form-group">
+            
+                            <input type="radio" name="source" id="tv" value="tv">
+                            <label for="tv">ТВ</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="massage">
+                        <legend>Текст сообщения</legend>
+                        <textarea name="massage" id="massage" cols="10" rows="10" placeholder="Пишите сообщение сюда"></textarea>
+                    </fieldset>
+                    <fieldset class="file">
+                        <legend>Вложение</legend>
+                        <input type="file" name="file" id="file">
+                    </fieldset>
+                    <div class="treatment">
+                        <input type="checkbox" name="agree" id="agree">
+                        <label for="agree">Даю согласие на обработку персональных данных</label>
+                    </div>
+                    <input class="button" type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
