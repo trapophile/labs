@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #121212;
+    font-family: 'Kelly Slab', sans-serif;
+    color: #fff;
+}
+
+.container {
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+    font-size: 1.5rem;
+    border-bottom: 3px solid lightgrey;
+    background-color: #121212;
+}
+
+.menu {
+    margin-top: -20px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+li a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+li a:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+.banner {
+    margin-top: 10px;
+    height: 370px;
+    width: 100%;
+    background: url(./images/padik.JPG) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    background-color: #121212;
+    color: #fff;
+    width: 70%;
+    margin: 30px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.copyright {
+    color: lightgray;
+    font-size: 0.8rem;
+}
+
+.page-content {
+    padding: 1rem;
+}
+
+.residents {
+    margin: 0 auto;
+}
+
+.resident-card {
+    height: 400px;
+    width: 700px;
+    background-color: rgb(40, 40, 40);
+    border: 3px solid  #fff;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 0;
+}
+
+.resident-image {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.resident-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.resident-details {
+    float: right;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.resident-details h2 {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 3px solid lightgray;
+}
+
+.resident-info {
+    font-size: 1.2rem;
+    text-align: left;
+    height: 65%;
+    overflow: auto;
+}
+
+.resident-info::-webkit-scrollbar {
+    width: 7px;
+    height: 100%;
+}
+
+.resident-info::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5px;
+}
+
+.resident-info::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+footer {
+    border-top: 3px solid lightgray;
+}
+
+.padik_window {
+    width: 500px;
+    height: 280px;
+    margin: 30px auto;
+    background-color: #000;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+.residents_window {  
+    width: 500px;
+    height: 560px;
+    margin: 50px auto;
+    background-color: #000;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+.chrnv_window {  
+    width: 500px;
+    height: 200px;
+    margin: 30px auto;
+    background-color: #000;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    padding: 20px;
+    border-bottom: 3px solid lightgray;
+}
+
+.telegram {
+    text-align: center;
+    width: 60%;
+    padding: 0.8rem;
+    margin: 30px auto;
+    font-size: 1.5rem;
+    color:#000;
+    background-color: #fff;
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+.telegram a {
+    text-decoration: none;
+    color: #000;
+}
+
+.telegram a:hover {
+    text-decoration: underline;
+}
+
+.twitch {
+    text-align: center;
+    width: 60%;
+    padding: 0.8rem;
+    margin: 30px auto;
+    font-size: 1.5rem;
+    color: #000;
+    background-color: rgb(200, 6, 238);
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+.twitch a {
+    text-decoration: none;
+    color: #000;
+}
+
+.twitch a:hover {
+    text-decoration: underline;
+}
+
+.spotify {
+    text-align: center;
+    width: 60%;
+    padding: 0.8rem;
+    margin: 30px auto;
+    font-size: 1.5rem;
+    color: #000;
+    background-color: rgb(81, 239, 34);
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+.spotify a {
+    text-decoration: none;
+    color: #000;
+}
+
+.spotify a:hover {
+    text-decoration: underline;
+}
+
+.soundcloud {
+    text-align: center;
+    width: 60%;
+    padding: 0.8rem;
+    margin: 30px auto;
+    font-size: 1.5rem;
+    color: #000;
+    background-color: rgb(243, 118, 15);
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+.soundcloud a {
+    text-decoration: none;
+    color: #000;
+}
+
+.soundcloud a:hover {
+    text-decoration: underline;
+}
+
+.yandex {
+    text-align: center;
+    width: 60%;
+    padding: 0.8rem;
+    margin: 30px auto;
+    font-size: 1.5rem;
+    color: #000;
+    background-color: rgb(248, 223, 2);
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+.yandex a {
+    text-decoration: none;
+    color: #000;
+}
+
+.yandex a:hover {
+    text-decoration: underline;
+}
+
+.vk {
+    text-align: center;
+    width: 60%;
+    padding: 0.8rem;
+    margin: 30px auto;
+    font-size: 1.5rem;
+    color: #000;
+    background-color: rgb(17, 99, 251);
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+.vk a {
+    text-decoration: none;
+    color: #000;
+}
+
+.vk a:hover {
+    text-decoration: underline;
+}
+
+.apple {
+    text-align: center;
+    width: 60%;
+    padding: 0.8rem;
+    margin: 30px auto;
+    font-size: 1.5rem;
+    color: #000;
+    background-color: rgb(255, 0, 0);
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+.apple a {
+    text-decoration: none;
+    color: #000;
+}
+
+.apple a:hover {
+    text-decoration: underline;
+}
+
+.youtube {
+    text-align: center;
+    width: 60%;
+    padding: 0.8rem;
+    margin: 30px auto;
+    font-size: 1.5rem;
+    color: #000;
+    background-color: rgb(255, 0, 0);
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+.youtube a {
+    text-decoration: none;
+    color: #000;
+}
+
+.youtube a:hover {
+    text-decoration: underline;
+}

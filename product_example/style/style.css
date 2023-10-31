@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');
+
+
+*::after,*::before {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    min-width: 50rem;
+}
+
+header, main {
+    font-family:  'Cormorant Garamond', serif;;
+}
+
+body::after {
+    content: '';
+    display: block;
+}
+.header {
+    background-color: #000;
+    padding: 1.25rem;
+    border-bottom: 5px solid  #0885c6;
+    font-size: 1.2rem;
+    position: sticky;
+    top:0;
+    
+}
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: rgb(40, 40, 40);
+    color: #fff;
+}
+.header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+.main-menu {
+    float: left;
+}
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-menu li {
+    display: inline;
+    margin-right: 5px;
+}
+.profile {
+    float: right;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.sidebar {
+    position: sticky;
+    top: 4.5rem;
+    float: left;
+    width: 15rem;
+    padding-top: 1.5rem;
+    box-sizing: border-box;
+}
+.sidebar fieldset {
+    border: none;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.sidebar legend {
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+.form-group{
+    font-size: 1.2rem;
+    margin: 5px auto;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.page-content {
+    margin-left: 15rem;
+    padding: 1rem;
+}
+
+.btn {
+    color: white;   
+    background-color:  #0885c6;
+    border: none;
+    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 95%;
+    margin: 10px 10px;
+}
+
+.product-card {
+    height: 21.8rem;
+    width: 31rem;
+    background-color: rgb(70,70,70);
+    border: 3px solid  #0885c6;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 0 5px 5px 0;
+    padding: 0;
+}
+.product-image {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.product-details {
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.product-details header {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.product-info {
+    font-size: 18px;
+    text-align: left;
+    height: 65%;
+    overflow: auto;
+}
+
+.product-info::-webkit-scrollbar {
+    width: 7px;
+    height: 100%;
+}
+
+.product-info::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5px;
+}
+
+.product-info::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.buy-btn {
+    color: white;   
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    overflow: hidden;
+    cursor:pointer;
+    outline: none;
+    border: none;
+    padding: 0;
+}
+
+.price {
+    background-color: #fff;
+    color: #000;
+    padding: 0.625rem 1.25rem;
+    display: inline-block;
+}
+.buy {
+    background-color: #0885c6;
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 0;
+    border-top: 5px solid  #0885c6;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+}
+
+.info {
+    width: 100%;
+    text-align: center;
+}

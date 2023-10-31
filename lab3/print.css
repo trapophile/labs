@@ -1,0 +1,122 @@
+.container, .banner, footer {
+    display: none;
+}
+
+.wrapper {
+    width: 100%;
+    background: none;
+}
+
+.resident-card {
+    height: 50%;
+    width: 100%;
+    background-color: none;
+    color: #000;
+    border: 3px solid  #000;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 0;
+}
+
+.resident-image {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.resident-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.resident-details {
+    float: right;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.resident-details h2 {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 3px solid lightgray;
+}
+
+.resident-info {
+    font-size: 1.2rem;
+    text-align: left;
+    height: 100%;
+}
+
+.padik_window {
+    color: #000;
+    border: 3px solid #000;
+    border-radius: 10px;
+}
+
+.residents_window {
+    color: #000;
+    border: 3px solid #000;
+    border-radius: 10px;
+}
+
+.chrnv_window {
+    color: #000;
+    border: 3px solid #000;
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    padding: 20px;
+    border-bottom: 3px solid lightgray;
+}
+
+.telegram {
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+.twitch {
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+.spotify {
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+.soundcloud {
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+.yandex {
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+.vk {
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+.apple {
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+.youtube {
+    border: 3px solid gray;
+    border-radius: 10px;
+}
