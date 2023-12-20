@@ -126,7 +126,10 @@ function pageBtnHandler(event) {
 function search () {
     const searchField = document.querySelector('.search-field');
     searchField.value = searchField.value.trim();
-    if (searchField.value === '') return downloadData(page = 1);
+    if (searchField.value === '') {
+        query = '';
+        return downloadData();
+    }
     downloadData(page = 1, query = searchField.value);
     window.scrollTo(0, 0);
 }
