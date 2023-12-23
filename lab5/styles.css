@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: #F2F5F1;
+    font: 16px Arial;
 }
 
 .header {
@@ -146,10 +147,6 @@ body {
     color: black;
 }
 
-body {
-  font: 16px Arial;
-}
-
 input {
   border: 1px solid transparent;
   background-color: #f1f1f1;
@@ -160,10 +157,7 @@ input[type=text] {
   background-color: #f1f1f1;
   width: 100%;
 }
-input[type=submit] {
-  background-color: DodgerBlue;
-  color: #fff;
-}
+
 .autocomplete-items {
   position: absolute;
   border: 1px solid #d4d4d4;

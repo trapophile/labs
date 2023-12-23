@@ -104,21 +104,18 @@ function downloadData(page = 1, query = null) {
     let xhr = new XMLHttpRequest();
     xhr.open('GET', url);
     xhr.responseType = 'json';
+    xhr.send();
     xhr.onload = function () {
         renderRecords(this.response.records);
         setPaginationInfo(this.response['_pagination']);
         renderPaginationElement(this.response['_pagination']);
     };
-    xhr.send();
-}
-
-function perPageBtnHandler(event) {
-    downloadData(1);
 }
 
 function pageBtnHandler(event) {
     if (event.target.dataset.page) {
-        downloadData(event.target.dataset.page);
+        downloadData(event.target.dataset.page, 
+            document.querySelector('.search-field').value.trim());
         window.scrollTo(0, 0);
     }
 }
@@ -126,10 +123,7 @@ function pageBtnHandler(event) {
 function search () {
     const searchField = document.querySelector('.search-field');
     searchField.value = searchField.value.trim();
-    if (searchField.value === '') {
-        query = '';
-        return downloadData();
-    }
+    if (searchField.value === '') return downloadData();
     downloadData(page = 1, query = searchField.value);
     window.scrollTo(0, 0);
 }
@@ -156,9 +150,10 @@ function autocomplete(event, arr) {
             0, value.length) + "</strong>";
         item.innerHTML += phrase.substr(value.length);
         item.innerHTML += "<input type='hidden' value='" + phrase + "'>";
-        item.addEventListener("click", function(e) {
+        item.addEventListener("click", function() {
             event.target.value = phrase;
-            clearAllListItems(e);
+            clearAllListItems;
+            downloadData(1, phrase);
         });
         autocompleteList.appendChild(item);
     }
@@ -172,30 +167,24 @@ function getAutocompleteItems(event) {
         'http://cat-facts-api.std-900.ist.mospolytech.ru/autocomplete'
     );
     url.searchParams.append('q', query);
-
     let xhr = new XMLHttpRequest();
     xhr.open('GET', url);
     xhr.responseType = 'json';
+    xhr.send();
     xhr.onload = function () {
         autocomplete(event, this.response);
     };
-    xhr.send();
-   
 }
 
 window.onload = function () {
     downloadData();
 
-    document.querySelector('.search-field').addEventListener(
-        "input", 
-        getAutocompleteItems
-    );
+    document.querySelector('.search-field').addEventListener("input",
+        getAutocompleteItems);
 
-    document.addEventListener("click", function (e) {
-        clearAllListItems(e);
-    });
+    document.addEventListener("click", clearAllListItems);
 
     document.querySelector('.search-btn').onclick = search;
     document.querySelector('.pagination').onclick = pageBtnHandler;
-    document.querySelector('.per-page-btn').onchange = perPageBtnHandler;
+    document.querySelector('.per-page-btn').onchange = search;
 };
